@@ -31,10 +31,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Pod/Classes'
-    s.subspec 'Public' do |ss|
-        ss.source_files = 'Pod/Classes/*.{h,m}'
+    s.subspec 'CustomView' do |ss|
+        ss.source_files = 'Pod/Classes/CustomView/*.{h,m}'
         end
-  
+    s.subspec 'CustomVC' do |ss|
+        ss.source_files = 'Pod/Classes/CustomVC/*.{h,m}'
+        end
+
   # s.resource_bundles = {
   #   'BZLib' => ['BZLib/Assets/*.png']
   # }
